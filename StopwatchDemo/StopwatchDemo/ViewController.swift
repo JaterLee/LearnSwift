@@ -86,8 +86,6 @@ class ViewController: UIViewController {
             RunLoop.current.add(lapStopwatch.timer, forMode: .commonModes)
         }
     }
-    
-
 }
 
 // MARK: - UITableView DataSource
@@ -133,8 +131,6 @@ extension ViewController: UITableViewDelegate {
     }
 }
 
-
-
 // MARK: - Extension
 //https://www.jianshu.com/p/783df05a9b59 对extension的语法介绍 以及和OC的category的区别
 fileprivate extension Selector {
@@ -168,6 +164,7 @@ fileprivate extension ViewController {
         if stopwatch.counter.truncatingRemainder(dividingBy: 60) < 10 {
             seconds = "0" + seconds
         }
+        
         label.text = mintes + ":" + seconds
     }
     
